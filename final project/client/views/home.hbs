@@ -1,0 +1,30 @@
+<div class="posts">
+    <div class="posts__container">
+        <h2 class="posts__title">Posts</h2>
+        <div class="posts__block">
+            {{#each posts}}
+                <div class="post">
+                    <h2 class="post__title">
+                        {{ title }}
+                    </h2>
+                    {{#if excerpt}}
+                        <p class="post__body">
+                            {{ excerpt }}
+                        </p>
+                    {{/if}}
+                    <p class="post__author">    
+                        Created by: {{ author }}
+                    </p>
+                    <div class="post__tags">
+                            <p>&#35;{{tags}}</p>
+                    </div>
+                    <div class="post__categories">
+                            <p>{{categories}}</p>
+                    </div>
+                    <p class="post__date">Created at: {{createdAt}}</p>
+                    <p class="post__date">Updated at: {{updatedAt}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

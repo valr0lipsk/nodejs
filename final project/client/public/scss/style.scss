@@ -1,0 +1,259 @@
+@import 'null.scss';
+
+$fontOpenS: 'Open Sans', sans-serif;
+$fontRoboto: 'Roboto', sans-serif;
+
+$clrWhite: #FFFFFF;
+$clrDarkGreen: #00897B;
+$clrGreen: #E4FDF9;
+$clrBlack: #000000;
+$clrGrey: #F0F1F1;
+$clrBlue: #3949AB;
+$clrDark: #222321;
+
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+}
+
+.header{
+    width: 100%;
+    .header__body{
+        min-height: 100px;
+        max-width: 1370px;
+        background-color: $clrWhite;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__menu{
+            display: flex;
+            justify-content: flex-start;
+
+            & > li > a{
+                display: block;
+                font: 600 20px/110% $fontOpenS;
+                letter-spacing: 0.1em;
+                color: $clrBlack;
+                text-align: center;
+                margin-right: 20px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.posts{
+    width: 100%;
+    background-color: $clrGreen;
+
+    .posts__container{
+        max-width: 1370px;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 115px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .posts__title{
+            font: bold 36px/136% $fontOpenS;
+            color: $clrBlack;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .posts__block{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .posts__post{
+                min-height: 405px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: $clrWhite;
+                padding: 30px 10px;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+                margin-bottom: 40px;
+
+                & > *:not(:last-child){
+                    margin-bottom: 20px;
+                }
+
+                .post__title{
+                    font: 600 20px/110% $fontOpenS;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                }
+
+                .post__body{
+                    font: 15px/167% $fontOpenS;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                }
+
+                .post__author{
+                    font: 15px/167% $fontOpenS;
+                    text-align: center;
+                    color: $clrDarkGreen;
+                    text-decoration: underline;
+                }
+
+                .post__tags{
+                    display: flex;
+                    & > *{
+                        margin-right: 5px;
+                        font: 12px/167% $fontOpenS;
+                        text-align: center;
+                    }
+                }
+
+                .post__categories{
+                    display: flex;
+                    & > *{
+                        margin-right: 5px;
+                        font: 12px/167% $fontOpenS;
+                        text-align: center;
+                    }
+                }
+
+                .post__date{
+                    font: 12px/167% $fontOpenS;
+                    text-align: center;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+}
+
+.main{
+    width: 100%;
+    background-color: $clrGreen;
+
+    .main__container{
+        max-width: 1370px;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 115px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main__title{
+            font: bold 36px/136% $fontOpenS;
+            color: $clrBlack;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .main__body{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            & > *:not(:last-child){
+                margin-bottom: 20px;
+            }
+
+            .body__quotes{
+                display: flex;
+                justify-content: flex-start;
+                align-self: flex-start;
+
+                & > *{
+                    margin-right: 30px;
+                    font: 15px/167% $fontOpenS;
+                }
+
+                & > :last-child{
+                    text-decoration: underline;
+                }
+
+                & > div{
+                    display: flex;
+                    & > *{
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .body__text{
+                font: 22px/167% $fontOpenS;
+            }
+
+            .body__dates{
+                display: flex;
+                align-self: flex-start;
+
+                & > *{
+                    margin-right: 15px;
+                    font: 12px/167% $fontOpenS;
+                }
+            }
+        }
+
+    }
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+
+    .footer__body{
+        min-height: 100px;
+        max-width: 1370px;
+        background-color: $clrWhite;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > p{
+            font: 18px/28px $fontOpenS;
+            letter-spacing: 0.0025em;
+            text-transform: uppercase;
+            text-align: center;
+            color: $clrBlack;
+            margin-bottom: 8px;
+        }
+
+        .footer__menu{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+    
+            & > li > a{
+                display: block;
+                font: 600 20px/110% $fontOpenS;
+                letter-spacing: 0.1em;
+                color: $clrBlack;
+                text-align: center;
+                margin-right: 20px;
+    
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+}

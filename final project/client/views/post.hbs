@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="main__container">
+        <h1 class="main__title">
+            {{ post.title }}
+        </h1>
+        <div class="main__body">
+            <div class="body__quotes">
+                <div>
+                        <p>{{ post.tags}}</p>
+                </div>
+                <div>
+                        <p>{{ post.categories}}</p>
+                </div>
+                <p>Created by: {{ post.author}}</p>
+            </div>
+            <p class="body__text">
+                {{ post.body }}
+            </p>
+            <div class="body__dates">
+                <p>Created at: {{post.createdAt}}</p>
+                {{#if post.updatedAt}}
+                    <p>Updated at: {{post.updatedAt}}</p>
+                {{/if}} 
+            </div>
+        </div>
+    </div>
+</div>

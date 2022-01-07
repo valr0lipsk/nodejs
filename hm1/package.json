@@ -1,0 +1,15 @@
+{  
+  "name": "nodejs-hm1",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon node server.js"
+  },
+  "author": "valr.lipsk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

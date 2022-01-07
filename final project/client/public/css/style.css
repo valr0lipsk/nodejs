@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 100%;
+  /* min-height: 100%; */
+}
+
+.header {
+  width: 100%;
+}
+.header .header__body {
+  min-height: 100px;
+  max-width: 1370px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header__body .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.header .header__body .header__menu > li > a {
+  display: block;
+  font: 600 20px/110% "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-align: center;
+  margin-right: 20px;
+}
+.header .header__body .header__menu > li > a:hover {
+  text-decoration: underline;
+}
+
+.posts {
+  width: 100%;
+  background-color: #E4FDF9;
+}
+.posts .posts__container {
+  max-width: 1370px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 115px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.posts .posts__container .posts__title {
+  font: bold 36px/136% "Open Sans", sans-serif;
+  color: #000000;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.posts .posts__container .posts__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.posts .posts__container .posts__block .post {
+  min-height: 405px;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  padding: 30px 10px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 40px;
+}
+.posts .posts__container .posts__block .post > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.posts .posts__container .posts__block .post .post__title {
+  font: 600 20px/110% "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.posts .posts__container .posts__block .post .post__body {
+  font: 15px/167% "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.posts .posts__container .posts__block .post .post__author {
+  font: 15px/167% "Open Sans", sans-serif;
+  text-align: center;
+  color: #00897B;
+  text-decoration: underline;
+}
+.posts .posts__container .posts__block .post .post__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.posts .posts__container .posts__block .post .post__tags > * {
+  margin-right: 5px;
+  font: 12px/167% "Open Sans", sans-serif;
+  text-align: center;
+}
+.posts .posts__container .posts__block .post .post__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.posts .posts__container .posts__block .post .post__categories > * {
+  margin-right: 5px;
+  font: 12px/167% "Open Sans", sans-serif;
+  text-align: center;
+}
+.posts .posts__container .posts__block .post .post__date {
+  font: 12px/167% "Open Sans", sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+.main {
+  width: 100%;
+  background-color: #E4FDF9;
+}
+.main .main__container {
+  max-width: 1370px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 115px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main .main__container .main__title {
+  font: bold 36px/136% "Open Sans", sans-serif;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.main .main__container .main__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .main__container .main__body > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.main .main__container .main__body .body__quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.main .main__container .main__body .body__quotes > * {
+  margin-right: 30px;
+  font: 15px/167% "Open Sans", sans-serif;
+}
+.main .main__container .main__body .body__quotes > :last-child {
+  text-decoration: underline;
+}
+.main .main__container .main__body .body__quotes > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .main__container .main__body .body__quotes > div > * {
+  margin-right: 5px;
+}
+.main .main__container .main__body .body__text {
+  font: 22px/167% "Open Sans", sans-serif;
+}
+.main .main__container .main__body .body__dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.main .main__container .main__body .body__dates > * {
+  margin-right: 15px;
+  font: 12px/167% "Open Sans", sans-serif;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+}
+.footer .footer__body {
+  min-height: 100px;
+  max-width: 1370px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer__body > p {
+  font: 18px/28px "Open Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.footer .footer__body .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer .footer__body .footer__menu > li > a {
+  display: block;
+  font: 600 20px/110% "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-align: center;
+  margin-right: 20px;
+}
+.footer .footer__body .footer__menu > li > a:hover {
+  text-decoration: underline;
+}
